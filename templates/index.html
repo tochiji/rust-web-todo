@@ -10,7 +10,7 @@
       <div>
         <div>id: {{entry.id}}, text: {{entry.text}}</div>
         <form action="/delete" method="post">
-          <input type="hidden" name="id" id="{{entry.id}}" />
+          <input type="hidden" name="id" value="{{entry.id}}" />
           <button>delete</button>
         </form>
       </div>
@@ -18,7 +18,7 @@
     </div>
 
     <form action="/add" method="post">
-      <div><input type="text" /></div>
+      <div><input name="text" /></div>
       <div><button>add</button></div>
     </form>
   </body>
